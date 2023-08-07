@@ -1,0 +1,98 @@
+div.active{
+	background-color:rgb(165, 165, 165,0.7);
+}
+
+.mailItem{ 
+	border-top:1px solid white;
+	padding:1%;
+	padding-left:0%;
+	margin-left:-1%
+	color:rgba(0,0,0,0.65);
+	background-color:rgba(219, 32, 76,0.25);
+}
+
+a.sideMenuLink{
+	text-decoration:none;
+	color:white;
+}
+
+div.mailItem:hover{
+	box-shadow: -5px 0 5px white;;
+	box-shadow: 0 5px 5px white;
+	box-shadow: 5px 0 5px white;
+}
+
+div.sideMenu{
+	margin-bottom:3%;
+	padding:0%;background-color:rgba(219, 32, 76,0.25);
+}
+
+div.sideMenu:hover{
+	background-color:rgb(255, 0, 84);
+	margin-right:1%;
+	padding:1%;
+}
+div{
+	float:left
+}
+button.basicBt{
+	
+    background-color:rgb(255, 0, 84);
+    color: white;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.basicBt:hover{
+	
+    background-color:rgb(255, 0, 84,0.75);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 680px) {
+	/* For mobiles: */
+	.col-m-0 {width: 3%;}
+	.col-m-1 {width: 100%;}
+	.col-m-2 {width: 7%;}
+	.col-m-3 {display:none;}
+	.col-m-4 {width: 80%;}
+	.col-m-5 {width: 35%}
+	.col-m-6 {width: 95%}
+	.col-m-7 {width: 85%}
+	
+}
+@media only screen and (min-width: 680px) {
+	/* For desktop: */
+	.col-0 {width: 10%;}
+	.col-1 {width: 100%;}
+	.col-2 {width: 10%;}
+	.col-3 {width: 60%;}
+	.col-4 {width: 80%;}
+	.col-5 {width: 35%}
+	.col-6 {width: 45%}
+	.col-7 {width: 15%}
+	.col-8 {width: 25%;}
+	.col-9 {width: 95%;}
+	.col-10 {width: 13%;}
+	.col-11 {width: 51%}
+}
+
+/* ******* step 4: clear both */
+[class*="col-"] {
+	float: left;
+	padding: 5px;
+}
+
+/* ******* step 5: clear both */
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
